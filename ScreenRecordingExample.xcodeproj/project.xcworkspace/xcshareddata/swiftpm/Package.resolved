@@ -1,0 +1,15 @@
+{
+  "originHash" : "a158bdf38b86da80a29de27c1eb3749b46b33bf9e59b033b50729ad0b94fa326",
+  "pins" : [
+    {
+      "identity" : "broadcastwriter",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/romiroma/BroadcastWriter",
+      "state" : {
+        "branch" : "main",
+        "revision" : "ef52e6f09f12c60bcca8544934799a5863947a7f"
+      }
+    }
+  ],
+  "version" : 3
+}

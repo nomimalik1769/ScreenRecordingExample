@@ -13,7 +13,47 @@
 		1C4A92FB2BB5792100824B14 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 1C4A92FA2BB5792100824B14 /* Base */; };
 		1C4A92FD2BB5792200824B14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C4A92FC2BB5792200824B14 /* Assets.xcassets */; };
 		1C4A93002BB5792200824B14 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 1C4A92FF2BB5792200824B14 /* Base */; };
+		1C4A930E2BB579ED00824B14 /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C4A930D2BB579ED00824B14 /* ReplayKit.framework */; };
+		1C4A93112BB579ED00824B14 /* SampleHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4A93102BB579ED00824B14 /* SampleHandler.swift */; };
+		1C4A93182BB579ED00824B14 /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C4A930D2BB579ED00824B14 /* ReplayKit.framework */; };
+		1C4A931A2BB579ED00824B14 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C4A93192BB579ED00824B14 /* UIKit.framework */; };
+		1C4A931D2BB579ED00824B14 /* BroadcastSetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4A931C2BB579ED00824B14 /* BroadcastSetupViewController.swift */; };
+		1C4A93212BB579ED00824B14 /* ScreenRecordingExampleExtensionSetupUI.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 1C4A93172BB579ED00824B14 /* ScreenRecordingExampleExtensionSetupUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1C4A93242BB579ED00824B14 /* ScreenRecordingExampleExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 1C4A930B2BB579ED00824B14 /* ScreenRecordingExampleExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1C4A93302BB6875800824B14 /* BroadcastWriter in Frameworks */ = {isa = PBXBuildFile; productRef = 1C4A932F2BB6875800824B14 /* BroadcastWriter */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1C4A931F2BB579ED00824B14 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1C4A92E82BB5792100824B14 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1C4A93162BB579ED00824B14;
+			remoteInfo = ScreenRecordingExampleExtensionSetupUI;
+		};
+		1C4A93222BB579ED00824B14 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1C4A92E82BB5792100824B14 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1C4A930A2BB579ED00824B14;
+			remoteInfo = ScreenRecordingExampleExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1C4A932B2BB579ED00824B14 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1C4A93212BB579ED00824B14 /* ScreenRecordingExampleExtensionSetupUI.appex in Embed Foundation Extensions */,
+				1C4A93242BB579ED00824B14 /* ScreenRecordingExampleExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1C4A92F02BB5792100824B14 /* ScreenRecordingExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScreenRecordingExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +64,16 @@
 		1C4A92FC2BB5792200824B14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1C4A92FF2BB5792200824B14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1C4A93012BB5792200824B14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C4A930B2BB579ED00824B14 /* ScreenRecordingExampleExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ScreenRecordingExampleExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C4A930D2BB579ED00824B14 /* ReplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReplayKit.framework; path = System/Library/Frameworks/ReplayKit.framework; sourceTree = SDKROOT; };
+		1C4A93102BB579ED00824B14 /* SampleHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleHandler.swift; sourceTree = "<group>"; };
+		1C4A93122BB579ED00824B14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C4A93172BB579ED00824B14 /* ScreenRecordingExampleExtensionSetupUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ScreenRecordingExampleExtensionSetupUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C4A93192BB579ED00824B14 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1C4A931C2BB579ED00824B14 /* BroadcastSetupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BroadcastSetupViewController.swift; sourceTree = "<group>"; };
+		1C4A931E2BB579ED00824B14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C4A932C2BB5888600824B14 /* ScreenRecordingExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ScreenRecordingExample.entitlements; sourceTree = "<group>"; };
+		1C4A932D2BB5889D00824B14 /* ScreenRecordingExampleExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ScreenRecordingExampleExtension.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +84,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1C4A93082BB579ED00824B14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C4A930E2BB579ED00824B14 /* ReplayKit.framework in Frameworks */,
+				1C4A93302BB6875800824B14 /* BroadcastWriter in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C4A93142BB579ED00824B14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C4A93182BB579ED00824B14 /* ReplayKit.framework in Frameworks */,
+				1C4A931A2BB579ED00824B14 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -41,6 +109,9 @@
 			isa = PBXGroup;
 			children = (
 				1C4A92F22BB5792100824B14 /* ScreenRecordingExample */,
+				1C4A930F2BB579ED00824B14 /* ScreenRecordingExampleExtension */,
+				1C4A931B2BB579ED00824B14 /* ScreenRecordingExampleExtensionSetupUI */,
+				1C4A930C2BB579ED00824B14 /* Frameworks */,
 				1C4A92F12BB5792100824B14 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +120,8 @@
 			isa = PBXGroup;
 			children = (
 				1C4A92F02BB5792100824B14 /* ScreenRecordingExample.app */,
+				1C4A930B2BB579ED00824B14 /* ScreenRecordingExampleExtension.appex */,
+				1C4A93172BB579ED00824B14 /* ScreenRecordingExampleExtensionSetupUI.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,6 +129,7 @@
 		1C4A92F22BB5792100824B14 /* ScreenRecordingExample */ = {
 			isa = PBXGroup;
 			children = (
+				1C4A932C2BB5888600824B14 /* ScreenRecordingExample.entitlements */,
 				1C4A92F32BB5792100824B14 /* AppDelegate.swift */,
 				1C4A92F52BB5792100824B14 /* SceneDelegate.swift */,
 				1C4A92F72BB5792100824B14 /* ViewController.swift */,
@@ -65,6 +139,34 @@
 				1C4A93012BB5792200824B14 /* Info.plist */,
 			);
 			path = ScreenRecordingExample;
+			sourceTree = "<group>";
+		};
+		1C4A930C2BB579ED00824B14 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1C4A930D2BB579ED00824B14 /* ReplayKit.framework */,
+				1C4A93192BB579ED00824B14 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1C4A930F2BB579ED00824B14 /* ScreenRecordingExampleExtension */ = {
+			isa = PBXGroup;
+			children = (
+				1C4A932D2BB5889D00824B14 /* ScreenRecordingExampleExtension.entitlements */,
+				1C4A93102BB579ED00824B14 /* SampleHandler.swift */,
+				1C4A93122BB579ED00824B14 /* Info.plist */,
+			);
+			path = ScreenRecordingExampleExtension;
+			sourceTree = "<group>";
+		};
+		1C4A931B2BB579ED00824B14 /* ScreenRecordingExampleExtensionSetupUI */ = {
+			isa = PBXGroup;
+			children = (
+				1C4A931C2BB579ED00824B14 /* BroadcastSetupViewController.swift */,
+				1C4A931E2BB579ED00824B14 /* Info.plist */,
+			);
+			path = ScreenRecordingExampleExtensionSetupUI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,15 +179,55 @@
 				1C4A92EC2BB5792100824B14 /* Sources */,
 				1C4A92ED2BB5792100824B14 /* Frameworks */,
 				1C4A92EE2BB5792100824B14 /* Resources */,
+				1C4A932B2BB579ED00824B14 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				1C4A93202BB579ED00824B14 /* PBXTargetDependency */,
+				1C4A93232BB579ED00824B14 /* PBXTargetDependency */,
 			);
 			name = ScreenRecordingExample;
 			productName = ScreenRecordingExample;
 			productReference = 1C4A92F02BB5792100824B14 /* ScreenRecordingExample.app */;
 			productType = "com.apple.product-type.application";
+		};
+		1C4A930A2BB579ED00824B14 /* ScreenRecordingExampleExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C4A93282BB579ED00824B14 /* Build configuration list for PBXNativeTarget "ScreenRecordingExampleExtension" */;
+			buildPhases = (
+				1C4A93072BB579ED00824B14 /* Sources */,
+				1C4A93082BB579ED00824B14 /* Frameworks */,
+				1C4A93092BB579ED00824B14 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ScreenRecordingExampleExtension;
+			packageProductDependencies = (
+				1C4A932F2BB6875800824B14 /* BroadcastWriter */,
+			);
+			productName = ScreenRecordingExampleExtension;
+			productReference = 1C4A930B2BB579ED00824B14 /* ScreenRecordingExampleExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		1C4A93162BB579ED00824B14 /* ScreenRecordingExampleExtensionSetupUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C4A93252BB579ED00824B14 /* Build configuration list for PBXNativeTarget "ScreenRecordingExampleExtensionSetupUI" */;
+			buildPhases = (
+				1C4A93132BB579ED00824B14 /* Sources */,
+				1C4A93142BB579ED00824B14 /* Frameworks */,
+				1C4A93152BB579ED00824B14 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ScreenRecordingExampleExtensionSetupUI;
+			productName = ScreenRecordingExampleExtensionSetupUI;
+			productReference = 1C4A93172BB579ED00824B14 /* ScreenRecordingExampleExtensionSetupUI.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -100,6 +242,12 @@
 					1C4A92EF2BB5792100824B14 = {
 						CreatedOnToolsVersion = 15.3;
 					};
+					1C4A930A2BB579ED00824B14 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					1C4A93162BB579ED00824B14 = {
+						CreatedOnToolsVersion = 15.3;
+					};
 				};
 			};
 			buildConfigurationList = 1C4A92EB2BB5792100824B14 /* Build configuration list for PBXProject "ScreenRecordingExample" */;
@@ -111,11 +259,16 @@
 				Base,
 			);
 			mainGroup = 1C4A92E72BB5792100824B14;
+			packageReferences = (
+				1C4A932E2BB6875800824B14 /* XCRemoteSwiftPackageReference "BroadcastWriter" */,
+			);
 			productRefGroup = 1C4A92F12BB5792100824B14 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				1C4A92EF2BB5792100824B14 /* ScreenRecordingExample */,
+				1C4A930A2BB579ED00824B14 /* ScreenRecordingExampleExtension */,
+				1C4A93162BB579ED00824B14 /* ScreenRecordingExampleExtensionSetupUI */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +281,20 @@
 				1C4A92FD2BB5792200824B14 /* Assets.xcassets in Resources */,
 				1C4A93002BB5792200824B14 /* Base in Resources */,
 				1C4A92FB2BB5792100824B14 /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C4A93092BB579ED00824B14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C4A93152BB579ED00824B14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,7 +311,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1C4A93072BB579ED00824B14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C4A93112BB579ED00824B14 /* SampleHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C4A93132BB579ED00824B14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C4A931D2BB579ED00824B14 /* BroadcastSetupViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1C4A93202BB579ED00824B14 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1C4A93162BB579ED00824B14 /* ScreenRecordingExampleExtensionSetupUI */;
+			targetProxy = 1C4A931F2BB579ED00824B14 /* PBXContainerItemProxy */;
+		};
+		1C4A93232BB579ED00824B14 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1C4A930A2BB579ED00824B14 /* ScreenRecordingExampleExtension */;
+			targetProxy = 1C4A93222BB579ED00824B14 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		1C4A92F92BB5792100824B14 /* Main.storyboard */ = {
@@ -288,10 +484,13 @@
 		1C4A93052BB5792200824B14 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ScreenRecordingExample/ScreenRecordingExample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 64L6BFS38D;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ScreenRecordingExample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -299,6 +498,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,10 +515,13 @@
 		1C4A93062BB5792200824B14 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ScreenRecordingExample/ScreenRecordingExample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 64L6BFS38D;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ScreenRecordingExample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -326,6 +529,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -333,6 +537,112 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.app.ScreenRecordingExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1C4A93262BB579ED00824B14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 64L6BFS38D;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ScreenRecordingExampleExtensionSetupUI/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ScreenRecordingExampleExtensionSetupUI;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.ScreenRecordingExample.ScreenRecordingExampleExtensionSetupUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1C4A93272BB579ED00824B14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 64L6BFS38D;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ScreenRecordingExampleExtensionSetupUI/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ScreenRecordingExampleExtensionSetupUI;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.ScreenRecordingExample.ScreenRecordingExampleExtensionSetupUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1C4A93292BB579ED00824B14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ScreenRecordingExampleExtension/ScreenRecordingExampleExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 64L6BFS38D;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ScreenRecordingExampleExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ScreenRecordingExampleExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.ScreenRecordingExample.ScreenRecordingExampleExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1C4A932A2BB579ED00824B14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ScreenRecordingExampleExtension/ScreenRecordingExampleExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 64L6BFS38D;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ScreenRecordingExampleExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ScreenRecordingExampleExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.ScreenRecordingExample.ScreenRecordingExampleExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -360,7 +670,44 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		1C4A93252BB579ED00824B14 /* Build configuration list for PBXNativeTarget "ScreenRecordingExampleExtensionSetupUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C4A93262BB579ED00824B14 /* Debug */,
+				1C4A93272BB579ED00824B14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1C4A93282BB579ED00824B14 /* Build configuration list for PBXNativeTarget "ScreenRecordingExampleExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C4A93292BB579ED00824B14 /* Debug */,
+				1C4A932A2BB579ED00824B14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1C4A932E2BB6875800824B14 /* XCRemoteSwiftPackageReference "BroadcastWriter" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/romiroma/BroadcastWriter";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1C4A932F2BB6875800824B14 /* BroadcastWriter */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1C4A932E2BB6875800824B14 /* XCRemoteSwiftPackageReference "BroadcastWriter" */;
+			productName = BroadcastWriter;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1C4A92E82BB5792100824B14 /* Project object */;
 }
